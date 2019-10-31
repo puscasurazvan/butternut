@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Section = styled.div`
-  width: 280px;
+  width: 230px;
   display: flex;
   flex-direction: row;
   background-color: white;
@@ -13,8 +13,7 @@ export const Section = styled.div`
 
 export const Button = styled.button`
   border-radius: 10px;
-  padding: 0 5px;
-  margin: 0;
+  margin: 5px;
   border: none;
   height: fit-content;
   width: fit-content;
@@ -30,7 +29,7 @@ export const FigureCaption = styled.figcaption`
   position: absolute;
   font-size: 10px;
   top: 15px;
-  left: 9px;
+  left: 15px;
   color: rgb(29, 108, 147);
   font-weight: bold;
 `
