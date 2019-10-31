@@ -18,6 +18,18 @@ const App = () => {
     setShow(false)
   }
 
+  const openModal = () => {
+    setShow(true)
+  }
+
+  const renderDayAndMonth = (value) => {
+    return moment(value).format('dddd, MMMM D')
+  }
+
+  const renderDay = (value) => {
+    return moment(value).format('D')
+  }
+
 
   return(
     <div className="App">
@@ -26,9 +38,9 @@ const App = () => {
         smallHeading='Delivery is always free'
       >
         <ButtonWrapper
-          date={moment(date).format('D')}
-          dayAndMonth={moment(date).format('dddd, MMMM D')}
-          changeDate={() => setShow(true)}
+          date={renderDay(date)}
+          dayAndMonth={renderDayAndMonth(date)}
+          changeDate={openModal}
         />
       </Wrapper>
 

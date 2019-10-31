@@ -22,7 +22,6 @@ const Modal = ({ children, toggle, open }) => {
     <Portal>
       {open && (
         <StyledModal.ModalWrapper onClick={toggle}>
-          <StyledModal.CloseButton onClick={toggle} />
           <StyledModal.ModalBody onClick={event => event.stopPropagation()}>
             {children}
           </StyledModal.ModalBody>
