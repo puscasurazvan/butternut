@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Section = styled.div`
+const Section = styled.div`
   width: 230px;
   display: flex;
   flex-direction: row;
@@ -11,7 +11,7 @@ export const Section = styled.div`
   box-shadow: 2px 2px 2px 2px rgb(230, 230, 230);
 `
 
-export const Button = styled.button`
+const Button = styled.button`
   border-radius: 10px;
   margin: 5px;
   border: none;
@@ -21,11 +21,11 @@ export const Button = styled.button`
   padding: 5px;
 `
 
-export const Figure = styled.figure`
+const Figure = styled.figure`
   position: relative;
 `
 
-export const FigureCaption = styled.figcaption`
+const FigureCaption = styled.figcaption`
   position: absolute;
   font-size: 10px;
   top: 15px;
@@ -33,5 +33,12 @@ export const FigureCaption = styled.figcaption`
   color: rgb(29, 108, 147);
   font-weight: bold;
 `
+
+export const StyledButtonWrapper = {
+  Section,
+  Button,
+  Figure,
+  FigureCaption
+}
 
 

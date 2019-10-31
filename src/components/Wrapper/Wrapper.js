@@ -1,13 +1,13 @@
 import React from 'react'
-import { Heading, SmallHeading, Section } from './style'
+import { StyledWrapper } from './style'
 
 const Wrapper = ({children, changeDate, heading, smallHeading}) => {
   return(
-    <Section>
-      <Heading> {heading} </Heading>
-      <SmallHeading> {smallHeading} </SmallHeading>
+    <StyledWrapper.Section>
+      <StyledWrapper.Heading> {heading} </StyledWrapper.Heading>
+      <StyledWrapper.SmallHeading> {smallHeading} </StyledWrapper.SmallHeading>
       {children}
-    </Section>
+    </StyledWrapper.Section>
   )
 }
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const ButtonWrapper = styled.div`
+const ButtonWrapper = styled.div`
   display:flex;
   align-items: center;
   text-align: center;
@@ -8,7 +8,7 @@ export const ButtonWrapper = styled.div`
   margin-top: 20px;
 `
 
-export const CancelButton = styled.button`
+const CancelButton = styled.button`
   color: grey;
   font-weight: bold;
   font-size: 20px,
@@ -17,7 +17,7 @@ export const CancelButton = styled.button`
   display: flex;
 `
 
-export const ConfirmButton = styled.button`
+const ConfirmButton = styled.button`
   display: flex;
   height: 30px;
   font-size: 20px,
@@ -25,3 +25,9 @@ export const ConfirmButton = styled.button`
   color: rgb(230, 108, 85);
   margin: 0;
 `
+
+export const StyledDatePicker = {
+  ButtonWrapper,
+  CancelButton,
+  ConfirmButton
+}

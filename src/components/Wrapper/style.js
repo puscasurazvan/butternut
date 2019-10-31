@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Section = styled.div`
+const Section = styled.div`
   width: 300px;
   height: 150px;
   display: flex;
@@ -13,13 +13,13 @@ export const Section = styled.div`
   border-radius: 20px;
 `
 
-export const Heading = styled.h1`
+const Heading = styled.h1`
   color: rgb(29, 108, 147);
   font-size: 20px;
   padding: 0 5px;
   margin: 0 10px;
 `
-export const SmallHeading = styled.h1`
+const SmallHeading = styled.h1`
   margin: 0 10px;
   padding: 0 5px;
   color: rgb(29, 108, 147);
@@ -28,3 +28,8 @@ export const SmallHeading = styled.h1`
   width: fit-content;
 `
 
+export const StyledWrapper = {
+  Section,
+  Heading,
+  SmallHeading
+}

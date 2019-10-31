@@ -1,17 +1,17 @@
 import React from 'react'
 
-import { Heading, Paragraph, SmallSection } from './style'
+import { StyledDetails } from './style'
 import van from '../../assets/van.svg';
 
 const Details = ({deliveryDayAndMonth}) => {
   return(
-    <SmallSection>
-      <Heading>{deliveryDayAndMonth}</Heading>
-      <Paragraph>
+    <StyledDetails.SmallSection>
+      <StyledDetails.Heading>{deliveryDayAndMonth}</StyledDetails.Heading>
+      <StyledDetails.Paragraph>
         <img src={van} alt="van"/>
         Earliest delivery
-      </Paragraph>
-  </SmallSection>
+      </StyledDetails.Paragraph>
+  </StyledDetails.SmallSection>
   )
 }
 
