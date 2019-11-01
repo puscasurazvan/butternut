@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { StyledModal } from './style'
 
-function Portal({ children }) {
-  const modalRoot = document.getElementById('modal-root')
+const Portal = ({ children }) => {
+  const root = document.getElementById('modal-root')
   const [element] = useState(document.createElement('div'))
 
   useEffect(() => {
-    modalRoot.appendChild(element)
+    root.appendChild(element)
 
     return function cleanup() {
-      modalRoot.removeChild(element)
+      root.removeChild(element)
     }
-  }, [modalRoot, element])
+  }, [root, element])
 
   return createPortal(children, element)
 }

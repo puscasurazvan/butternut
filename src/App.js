@@ -46,9 +46,6 @@ const App = () => {
 
       {show &&
         <Modal open={show} toggle={closeModal}>
-          <button onClick={closeModal}>
-            &times;
-          </button>
           <DatePicker updateDate={updateDate} onCancelClick={closeModal}/>
         </Modal>
       }

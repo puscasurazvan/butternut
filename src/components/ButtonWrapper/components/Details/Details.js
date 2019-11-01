@@ -8,7 +8,7 @@ const Details = ({deliveryDayAndMonth}) => {
     <StyledDetails.SmallSection>
       <StyledDetails.Heading>{deliveryDayAndMonth}</StyledDetails.Heading>
       <StyledDetails.Paragraph>
-        <img src={van} alt="van"/>
+        <StyledDetails.Image src={van} alt="van"/>
         Earliest delivery
       </StyledDetails.Paragraph>
   </StyledDetails.SmallSection>

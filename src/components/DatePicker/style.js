@@ -15,9 +15,13 @@ const CancelButton = styled.button`
   margin: 0;
   height: 30px;
   display: flex;
+  border: none;
+  font-weight: bold;
+  width: 95px;
 `
 
 const ConfirmButton = styled.button`
+  border: none;
   display: flex;
   height: 30px;
   font-size: 20px,

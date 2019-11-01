@@ -6,7 +6,6 @@ const DatePicker = ({updateDate, onCancelClick}) => {
   const [date, setDate] = useState(new Date())
 
   const onChange = (date) => {
-    console.log('date', date)
     setDate(date)
   }
 

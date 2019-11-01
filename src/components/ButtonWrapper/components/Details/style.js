@@ -19,8 +19,13 @@ const Paragraph = styled.p`
   font-size: 14px;
 `
 
+const Image = styled.img`
+  margin-right: 5px;
+`
+
 export const StyledDetails = {
   SmallSection,
   Heading,
-  Paragraph
+  Paragraph,
+  Image
 }
