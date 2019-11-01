@@ -12,7 +12,7 @@
   - React-simple-calendar: https://www.npmjs.com/package/simple-react-calendar
 ## 🦴 Styled Components
   - Hacked some styles in (Don't judge me please, limited time, although, not an excuse)
-## 🦴 MomentJS
-  - to format the date, could have used dayJS but I preffered not to waste time on searching for docs
+## 🦴 DayJS
+  - to format the date, used moment first time, changed to this as it's a 2kb library.
 
 ### Thank you and have a great weekend!

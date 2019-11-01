@@ -3,7 +3,8 @@ import DatePicker from './components/DatePicker'
 import Modal from './components/Modal'
 import Wrapper from './components/Wrapper'
 import ButtonWrapper from './components/ButtonWrapper'
-import * as moment from 'moment';
+import dayjs from 'dayjs'
+
 
 const App = () => {
   const [date, setDate] = useState(new Date())
@@ -23,11 +24,11 @@ const App = () => {
   }
 
   const renderDayAndMonth = (value) => {
-    return moment(value).format('dddd, MMMM D')
+    return dayjs(value).format('dddd, MMMM D')
   }
 
   const renderDay = (value) => {
-    return moment(value).format('D')
+    return dayjs(value).format('D')
   }
 
 

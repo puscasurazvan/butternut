@@ -29,7 +29,7 @@ const FigureCaption = styled.figcaption`
   position: absolute;
   font-size: 10px;
   top: 15px;
-  left: 15px;
+  left: 17px;
   color: rgb(29, 108, 147);
   font-weight: bold;
 `

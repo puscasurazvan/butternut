@@ -10,7 +10,6 @@ const Section = styled.div`
   margin-top: 100px;
   margin-left: 100px;
   padding: 10px;
-  border-radius: 20px;
 `
 
 const Heading = styled.h1`
