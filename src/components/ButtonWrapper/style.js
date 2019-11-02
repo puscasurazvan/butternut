@@ -7,12 +7,11 @@ const Section = styled.div`
   background-color: white;
   padding: 0;
   margin: 12px;
-  border-radius: 10px;
   box-shadow: 2px 2px 2px 2px rgb(230, 230, 230);
 `
 
 const Button = styled.button`
-  border-radius: 10px;
+  cursor: pointer;
   margin: 5px;
   border: none;
   height: fit-content;

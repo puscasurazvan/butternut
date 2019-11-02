@@ -5,29 +5,27 @@ const ButtonWrapper = styled.div`
   align-items: center;
   text-align: center;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 15px;
 `
 
 const CancelButton = styled.button`
   color: grey;
   font-weight: bold;
   font-size: 20px,
-  margin: 0;
-  height: 30px;
   display: flex;
-  border: none;
   font-weight: bold;
-  width: 95px;
+  padding: 15px;
+  border:none;
 `
 
 const ConfirmButton = styled.button`
-  border: none;
-  display: flex;
-  height: 30px;
+  padding: 15px;
+  border: 1px solid rgb(230, 108, 85);
   font-size: 20px,
   font-weight: bold;
   color: rgb(230, 108, 85);
   margin: 0;
+  box-shadow: 5px 5px 5px 2px rgb(220, 220, 220);
 `
 
 export const StyledDatePicker = {

@@ -45,11 +45,11 @@ const App = () => {
         />
       </Wrapper>
 
-      {show &&
+      {/* {show && */}
         <Modal open={show} toggle={closeModal}>
           <DatePicker updateDate={updateDate} onCancelClick={closeModal}/>
         </Modal>
-      }
+      {/* } */}
     </div>
   )
 

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Calendar from 'react-calendar'
 import { StyledDatePicker } from './style'
+import './style.scss'
 
 const DatePicker = ({updateDate, onCancelClick}) => {
   const [date, setDate] = useState(new Date())
@@ -16,6 +17,7 @@ const DatePicker = ({updateDate, onCancelClick}) => {
   return(
     <>
       <Calendar
+        className={['calendar']}
         onChange={onChange}
         value={date}
       />
