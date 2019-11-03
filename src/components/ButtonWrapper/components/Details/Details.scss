@@ -1,0 +1,26 @@
+.details {
+  display: flex;
+  flex-direction: column;
+  margin: auto 5px;
+  align-items: left;
+  color: rgb(29, 108, 147);
+  font-size: 16px;
+  
+  &__delivery-date {
+    font-weight: bold;
+  }
+
+
+  &__copy {
+    display: flex;
+    background-color: rgb(230, 230, 230);
+    width: fit-content;
+    flex-direction: row;
+    padding-left: 5px;
+    font-size: 12px;
+
+    &__paragraph {
+      margin: auto 5px;
+    }
+  }
+}

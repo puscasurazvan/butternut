@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Calendar from 'react-calendar'
-import { StyledDatePicker } from './style'
-import './style.scss'
+import './DatePicker.scss'
 
 const DatePicker = ({updateDate, onCancelClick}) => {
   const [date, setDate] = useState(new Date())
@@ -21,12 +20,12 @@ const DatePicker = ({updateDate, onCancelClick}) => {
         onChange={onChange}
         value={date}
       />
-      <StyledDatePicker.ButtonWrapper>
-        <StyledDatePicker.CancelButton onClick={onCancelClick}>
+      <div className='buttons-wrapper'>
+        <button className='buttons-wrapper__cancel-button' onClick={onCancelClick}>
           CANCEL, DON'T CHANGE
-        </StyledDatePicker.CancelButton>
-        <StyledDatePicker.ConfirmButton onClick={onButtonClick}>CHANGE DATE</StyledDatePicker.ConfirmButton>
-      </StyledDatePicker.ButtonWrapper>
+        </button>
+        <button className='buttons-wrapper__confirm-button'onClick={onButtonClick}>CHANGE DATE</button>
+      </div>
     </>
   )
 }

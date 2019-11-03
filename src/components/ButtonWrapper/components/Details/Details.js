@@ -1,17 +1,18 @@
 import React from 'react'
 
-import { StyledDetails } from './style'
-import van from '../../assets/van.svg';
+import van from '../../assets/van.svg'
+
+import './Details.scss'
 
 const Details = ({deliveryDayAndMonth}) => {
   return(
-    <StyledDetails.SmallSection>
-      <StyledDetails.Heading>{deliveryDayAndMonth}</StyledDetails.Heading>
-      <StyledDetails.Paragraph>
-        <StyledDetails.Image src={van} alt="van"/>
-        <StyledDetails.Copy>Earliest delivery</StyledDetails.Copy>
-      </StyledDetails.Paragraph>
-  </StyledDetails.SmallSection>
+    <div className='details'>
+      <p className='details__delivery-date'>{deliveryDayAndMonth}</p>
+      <div className="details__copy">
+        <img src={van} alt="van"/>
+        <p className='details__copy__paragraph'>Earliest delivery</p>
+      </div>
+    </div>
   )
 }
 

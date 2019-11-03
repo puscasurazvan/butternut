@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
-import { StyledModal } from './style'
+import './Modal.scss'
 
 const Portal = ({ children }) => {
   const root = document.getElementById('modal-root')
@@ -21,11 +21,11 @@ const Modal = ({ children, toggle, open }) => {
   return (
     <Portal>
       {open && (
-        <StyledModal.ModalWrapper onClick={toggle}>
-          <StyledModal.ModalBody onClick={event => event.stopPropagation()}>
+        <div className='modal' onClick={toggle}>
+          <div className='modal__body' onClick={event => event.stopPropagation()}>
             {children}
-          </StyledModal.ModalBody>
-        </StyledModal.ModalWrapper>
+          </div>
+        </div>
       )}
     </Portal>
   )

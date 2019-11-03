@@ -3,23 +3,24 @@ import calendar from './assets/calendar.svg';
 import Details from './components/Details';
 
 
-import { StyledButtonWrapper } from './style'
+import './ButtonWrapper.scss'
 
 const Wrapper = ({changeDate, date, dayAndMonth}) => {
+
   return(
-    <StyledButtonWrapper.Section>
-      <Details deliveryDayAndMonth={dayAndMonth}/>
-      <StyledButtonWrapper.Button onClick={changeDate}>
-        <StyledButtonWrapper.Figure>
+    <>
+      <button className='change-delivery' onClick={changeDate}>
+        <Details deliveryDayAndMonth={dayAndMonth}/>
+        <figure className='change-delivery__icon'>
           <img src={calendar} alt="calendar"/>
-          <StyledButtonWrapper.FigureCaption>
+          <figcaption className='change-delivery__icon-day'>
             {date}
-          </StyledButtonWrapper.FigureCaption>
-        </StyledButtonWrapper.Figure>
-        Change
-      </StyledButtonWrapper.Button>
+          </figcaption>
+          <p className="change-derlivery__icon-copy">Change</p>
+        </figure>
+      </button>
       
-    </StyledButtonWrapper.Section>
+    </>
   )
 }
 

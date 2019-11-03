@@ -5,7 +5,6 @@ import Wrapper from './components/Wrapper'
 import ButtonWrapper from './components/ButtonWrapper'
 import dayjs from 'dayjs'
 
-
 const App = () => {
   const [date, setDate] = useState(new Date())
   const [show, setShow] = useState(false)
@@ -28,14 +27,15 @@ const App = () => {
   }
 
   const renderDay = (value) => {
-    return dayjs(value).format('D')
+    const date = dayjs(value).format('D')
+    return (date.length === 1 ? '0' + date : '' + date)
   }
 
 
   return(
     <div className="App">
       <Wrapper
-        heading='Choose your delivery' 
+        heading='Choose your delivery day'
         smallHeading='Delivery is always free'
       >
         <ButtonWrapper
@@ -45,11 +45,11 @@ const App = () => {
         />
       </Wrapper>
 
-      {/* {show && */}
+      {show &&
         <Modal open={show} toggle={closeModal}>
           <DatePicker updateDate={updateDate} onCancelClick={closeModal}/>
         </Modal>
-      {/* } */}
+      }
     </div>
   )
 

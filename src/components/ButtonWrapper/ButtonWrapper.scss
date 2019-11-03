@@ -1,0 +1,26 @@
+.change-delivery {
+  width: 300px;
+  margin-top: 20px;
+  border: none;
+  box-shadow: 0 2px 5px 2px rgb(139, 139, 139);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(29, 108, 147);
+  background-color: rgb(200, 227, 240);
+  background: linear-gradient(to right, white 70%, rgb(200, 227, 240) 30%);
+  background-repeat: no-repeat;
+  
+  &__icon {
+    position: relative;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+  &__icon-day {
+    position: absolute;
+    top: 15px;
+    left: 14px;
+  }
+}
