@@ -2,7 +2,6 @@ import React from 'react'
 import calendar from './assets/calendar.svg';
 import Details from './components/Details';
 
-
 import './ButtonWrapper.scss'
 
 const Wrapper = ({changeDate, date, dayAndMonth}) => {

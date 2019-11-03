@@ -1,4 +1,5 @@
 import React from 'react'
+
 import './Wrapper.scss'
 
 const Wrapper = ({children, changeDate, heading, smallHeading}) => {

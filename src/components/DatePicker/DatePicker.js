@@ -30,6 +30,4 @@ const DatePicker = ({updateDate, onCancelClick}) => {
   )
 }
 
-
-
 export default DatePicker

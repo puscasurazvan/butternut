@@ -1,27 +1,25 @@
-.calendar {
+.react-calendar {
   border:none;
 
-  .react-calendar__navigation__arrow {
+  &__navigation__arrow {
     display: none;
   }
   
-  .react-calendar__month-view__weekdays {
+  &__month-view__weekdays {
     color: rgb(29, 108, 147);
   }
 
-  .react-calendar__navigation__label { 
+  &__navigation__label { 
     color: rgb(29, 108, 147);
     font-size: 20px;
     font-weight: bold;
   }
 
-  .react-calendar__tile { 
-    border: 1px solid rgb(230, 108, 85);
+  &__tile { 
     color: rgb(230, 108, 85);
-    margin-top: 5px;
   }
 
-  .react-calendar__tile--active {
+  &__tile--active {
     background-color: rgb(230, 108, 85);
     color: white;
   }
