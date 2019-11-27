@@ -1,4 +1,4 @@
-# 🐶 ButternutBox Modal Challenge 🐶
+# 🐶 Modal Challenge 🐶
 
 - Boostrapped this with create-react-app
 - Clone repo, yarn && yarn start to run the project
@@ -7,7 +7,7 @@
 # Technologies used:
 
 ## 🦴 React
-  - Hooks (First time I use them in a personal project)
+  - Hooks
   - React Portal
   - React-simple-calendar: https://www.npmjs.com/package/simple-react-calendar (limited styling options though)
 
